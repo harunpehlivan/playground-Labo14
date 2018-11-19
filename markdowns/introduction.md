@@ -14,5 +14,4 @@ void main() {
     printf("%s",chaine);
 
 }
-
 ```
