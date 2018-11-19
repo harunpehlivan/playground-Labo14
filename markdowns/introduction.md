@@ -7,11 +7,19 @@ Pour pouvoir saisir ou afficher une chaîne de caractères avec un `scanf` ou un
 ```C runnable
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-void main() {
+int main()
+{
+    char chaine[10] = "Bonjour\0";
+    int longueurChaine = 0;
 
-    char chaine[13] = "un deux trois";
-    printf("%s",chaine);
+    // On récupère la longueur de la chaîne dans longueurChaine
+    longueurChaine = strlen(chaine);
 
+    // On affiche la longueur de la chaîne
+    printf("La chaine %s fait %d caracteres de long", chaine, longueurChaine);
+
+    return 0;
 }
 ```
