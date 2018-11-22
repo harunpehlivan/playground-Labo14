@@ -4,6 +4,8 @@ En C, les chaînes de caractères sont des vecteurs de caractères (`char` en an
 
 Pour pouvoir saisir ou afficher une chaîne de caractères avec un `scanf` ou un `printf`, on utilise le symbole `%s`.
 
+(https://www.youtube.com/watch?v=_7nUhHZFMos)
+
 ## Fonctions de traitement des chaînes de caractères
 
 Il existe plusieurs fonctions permettant de travailler avec des chaînes de caractères. Vous en trouverez quelques-unes ci-après.
