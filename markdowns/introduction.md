@@ -4,6 +4,10 @@ En C, les chaînes de caractères sont des vecteurs de caractères (`char` en an
 
 Pour pouvoir saisir ou afficher une chaîne de caractères avec un `scanf` ou un `printf`, on utilise le symbole `%s`.
 
+## Fonctions de traitement des chaînes de caractères
+
+Il existe plusieurs fonctions permettant de travailler avec des chaînes de caractères. Vous en trouverez quelques-unes ci-après.
+
 ### size_t strlen(const char* chaine);
 
 `strlen` est une fonction qui calcule la longueur d'une chaîne de caractères (sans compter le caractère `\0`).
@@ -46,6 +50,112 @@ int main()
     // Si tout s'est bien passé, la copie devrait être identique à chaine
     printf("chaine vaut : %s\n", chaine);
     printf("copie vaut : %s\n", copie);
+
+    return 0;
+}
+```
+
+### char* strcat(char* chaine1, const char* chaine2);
+
+La fonction `strcat` ajoute `chaine2` après la `chaine1` et stock le résultat dans chaine1.
+
+```C runnable
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char chaine1[100] = "Salut "; //Sa taille doit être suffisante pour accueillir chaine1 et chaine2
+	char chaine2[15] = "Mateo21";
+
+    strcat(chaine1, chaine2);
+
+    // Chaine1 contient la concaténation de chaine1 et chaine2
+    printf("chaine1 vaut : %s\n", chaine1);
+
+    // chaine2 n'a pas changé :
+    printf("chaine2 vaut toujours : %s\n", chaine2);
+
+    return 0;
+}
+```
+
+### int strcmp(const char* chaine1, const char* chaine2);
+
+La fonction `strcmp` compare les chaine de caractères `chaine1` et `chaine2`. 
+Elle renverra :
+- `0` si les chaînes sont identiques 
+- une valeur positive si la première est alphabétiquement après la seconde 
+- une valeur négative si la première est alphabétiquement avant la seconde 
+
+```C runnable
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char chaine1[15] = "Texte de test";
+	char chaine2[15] = "Texte de test";
+
+    if (strcmp(chaine1, chaine2) == 0) // Si chaînes identiques
+        printf("Les chaines sont identiques\n");
+    else {
+		printf("Les chaines sont differentes\n");
+	}
+    return 0;
+}
+```
+
+### char* strchr(const char* chaine, int caractereARechercher);
+
+La fonction `strchr` renvoie un pointeur vers la première occurence du caractère à rechercher qu'elle a trouvé, c'est-à-dire qu'elle renvoie l'adresse de ce caractère dans la mémoire. Elle renvoie `NULL` si elle n'a rien trouvé.
+
+```C runnable
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char chaine[15] = "Texte de test";
+	char *suiteChaine = NULL;
+
+    suiteChaine = strchr(chaine, 'd');
+
+    if (suiteChaine != NULL) // Si on a trouvé quelque chose
+    {
+        printf("Voici la fin de la chaine a partir du premier d : %s", suiteChaine);
+    }
+
+    return 0;
+}
+```
+
+
+### char* strstr(const char* chaine, const char* chaineARechercher);
+
+La fonction `strstr` recherche la première occurrence d'une chaîne dans une autre chaîne.
+
+Elle renvoie un pointeur, sur la première occurrence, quand elle a trouvé ce qu'elle cherchait. Elle renvoie NULL si elle n'a rien trouvé.
+
+```C runnable
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char *suiteChaine;
+
+    // On cherche la première occurrence de "test" dans "Texte de test" :
+    suiteChaine = strstr("Texte de test", "test");
+
+    if (suiteChaine != NULL)
+    {
+        printf("Premiere occurrence de \"test\" dans \"Texte de test\" : %s\n", suiteChaine);
+    }
 
     return 0;
 }
