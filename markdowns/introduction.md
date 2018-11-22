@@ -147,16 +147,21 @@ Elle renvoie un pointeur, sur la première occurrence, quand elle a trouvé ce q
 
 int main()
 {
-    char *suiteChaine;
+    char chaine[15] = "Texte de test";
+    char *suiteChaine=NULL;
+
+    printf("Adresse de suite de chaîne : %p\n",suiteChaine);
 
     // On cherche la première occurrence de "test" dans "Texte de test" :
-    suiteChaine = strstr("Texte de test", "test");
+    suiteChaine = strstr(chaine, "test");
 
     if (suiteChaine != NULL)
     {
         printf("Premiere occurrence de \"test\" dans \"Texte de test\" : %s\n", suiteChaine);
     }
 
+    printf("Adresse de suite de chaîne : %p\n",suiteChaine);
+    printf("Adresse de suite de chaîne : %p\n",suiteChaine-chaine); //Pourra constater que l'indice du début de test est bien 9
     return 0;
 }
 ```
