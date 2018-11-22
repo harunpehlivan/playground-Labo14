@@ -4,6 +4,7 @@
 
 int main() {
   int chaine[100];
+  fflush(stdin);
   scanf("%s",chaine);
   printf("%d\n", strlength(&chaine[0]));
   return 0;
