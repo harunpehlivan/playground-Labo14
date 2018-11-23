@@ -9,7 +9,7 @@ int main() {
 	int result[11]={1,1,1,0,0,1,1,1,1,0,0};  
     int i,ok=1;
 	
-	for (i=0;i<10;i++) {
+	for (i=0;i<11;i++) {
 		if (palindrome(chaine[i])==result[i]) {
 			ok = ok && 1;
 			printf("TECHIO> message --channel \"Testing Results\" 'Test %d for \"%s\" success'\n",i,chaine[i]);
