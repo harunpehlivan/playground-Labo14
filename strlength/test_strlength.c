@@ -11,10 +11,11 @@ int main() {
 		
 		if (strlength(chaine[i])==result[i]) {
 			ok = ok && 1;
+			printf("TECHIO> message --channel \"Testing Results\" Test %d success",i);
 		}
 		else {
 			ok = ok && 0;
-			printf("TECHIO> message --channel \"TEST ERREUR\" 'Error function fail test (%d) for \"%s\"'\n",i,chaine[i]);
+			printf("TECHIO> message --channel \"Testing Results\" 'Error function fail Test %d for \"%s\"'\n",i,chaine[i]);
 		}
 	}
 		
