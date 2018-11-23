@@ -5,7 +5,7 @@
 int main() {
 	char chaine[5][20]={"Bonjour","","123456789","a","azerty"};
 	int result[5]={7,0,9,1,6};  
-    int ok=1;
+    int i,ok=1;
 	
 	for (i=0;i<5;i++) {
 		
