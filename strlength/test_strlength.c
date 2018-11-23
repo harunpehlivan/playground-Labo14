@@ -3,9 +3,25 @@
 #include "strlength.h"
 
 int main() {
-  int chaine[100];
-  fflush(stdin);
-  scanf("%s",chaine);
-  printf("%d\n", strlength(&chaine[0]));
-  return 0;
+	char chaine[5][20]={"Bonjour","","123456789","a","azerty"};
+	int result[5]={7,0,9,1,6};  
+    int ok=1;
+	
+	for (i=0;i<5;i++) {
+		
+		if (strlength(chaine[i])==result[i]) {
+			ok = ok && 1;
+		}
+		else {
+			ok = ok && 0;
+			printf("TECHIO> message --channel \"TEST ERREUR\" 'Error function fail test (%d) for \"%s\"'\n",i,chaine[i]);
+		}
+	}
+		
+	if(ok)
+		printf("TECHIO> success true\n");
+	else  
+		printf("TECHIO> success false\n");
+	
+	return 0;
 }
