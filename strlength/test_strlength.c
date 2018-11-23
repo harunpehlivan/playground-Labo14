@@ -11,7 +11,7 @@ int main() {
 		
 		if (strlength(chaine[i])==result[i]) {
 			ok = ok && 1;
-			printf("TECHIO> message --channel \"Testing Results\" Test %d success",i);
+			printf("TECHIO> message --channel \"Testing Results\" Test %d success\n",i);
 		}
 		else {
 			ok = ok && 0;
