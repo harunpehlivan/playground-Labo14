@@ -3,11 +3,11 @@
 #include "palindrome.h"
 
 int main() {
-	char chaine[8][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","Elu par cette crapule","aa","ab"};
-	int result[8]={1,1,1,0,0,1,1,1,1,0};  
+	char chaine[10][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","Elu par cette crapule","aa","ab"};
+	int result[10]={1,1,1,0,0,1,1,1,1,0};  
     int i,ok=1;
 	
-	for (i=0;i<8;i++) {
+	for (i=0;i<10;i++) {
 		if (palindrome(chaine[i])==result[i]) {
 			ok = ok && 1;
 			printf("TECHIO> message --channel \"Testing Results\" 'Test %d for \"%s\" success'\n",i,chaine[i]);
