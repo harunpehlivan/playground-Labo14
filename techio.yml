@@ -10,7 +10,7 @@ plan:
   statement: markdowns/ex3.md
 projects:
   contains:
-    root: /contains
+    root: /strlength
     runner:
       name: techio/cmake-gcc-runner
       version: latest
