@@ -9,7 +9,7 @@ plan:
 - title: Exercice 3
   statement: markdowns/ex3.md
 projects:
-  contains:
+  strlength:
     root: /strlength
     runner:
       name: techio/cmake-gcc-runner
