@@ -3,8 +3,8 @@
 #include "palindrome.h"
 
 int main() {
-	char chaine[8][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","Elu par cette crapule"};
-	int result[8]={1,1,1,0,0,1,1,1};  
+	char chaine[8][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","Elu par cette crapule","aa","ab"};
+	int result[8]={1,1,1,0,0,1,1,1,1,0};  
     int i,ok=1;
 	
 	for (i=0;i<8;i++) {
