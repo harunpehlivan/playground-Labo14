@@ -5,7 +5,7 @@
 #include "palindrome.h"
 
 int main() {
-	char chaine[10][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","Elu par cette crapule","aa","ab"};
+	char chaine[10][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","EluParCetteCrapule","aa","ab"};
 	int result[10]={1,1,1,0,0,1,1,1,1,0};  
     int i,ok=1;
 	
