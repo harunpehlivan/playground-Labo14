@@ -8,7 +8,7 @@ int main() {
     int i,ok=1;
 	
 	for (i=0;i<5;i++) {
-		printf("%s - %d - (%d)\n",strlength(chaine[i]),chaine[i],result[i]);
+		//printf("%s - %d - (%d)\n",strlength(chaine[i]),chaine[i],result[i]);
 		if (strlength(chaine[i])==result[i]) {
 			ok = ok && 1;
 			printf("TECHIO> message --channel \"Testing Results\" 'Test %d for \"%s\" success'\n",i,chaine[i]);
