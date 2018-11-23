@@ -5,8 +5,8 @@
 #include "palindrome.h"
 
 int main() {
-	char chaine[10][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","EluParCetteCrapule","aa","ab"};
-	int result[10]={1,1,1,0,0,1,1,1,1,0};  
+	char chaine[11][25]={"ete","","a","bonjour","azerty","Mon nom","kayak","EluParCetteCrapule","aa","ab",NULL};
+	int result[11]={1,1,1,0,0,1,1,1,1,0,0};  
     int i,ok=1;
 	
 	for (i=0;i<10;i++) {
