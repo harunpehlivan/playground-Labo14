@@ -5,6 +5,10 @@
 make  
 "./"$1
 
+wget http://hepl.info-etude.be/test.php > result
+
+cat result
+
 # result=true
 # for file in test/TEST_*.in; do
   # "./"$1 < $file > "output.txt"
