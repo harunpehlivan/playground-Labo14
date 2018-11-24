@@ -7,7 +7,9 @@ make
 
 wget http://hepl.info-etude.be/test.php > result
 
-cat result
+# cat result
+
+cat test.php
 
 # result=true
 # for file in test/TEST_*.in; do
