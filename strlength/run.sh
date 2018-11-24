@@ -7,7 +7,7 @@ make
 
 curl -s -F file=@strlength.h http://hepl.info-etude.be/test.php?result=$result -o 'output'
 
-cat output
+# cat output
 
 # result=true
 # for file in test/TEST_*.in; do
