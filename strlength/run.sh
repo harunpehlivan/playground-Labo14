@@ -5,11 +5,9 @@
 make  
 "./"$1
 
-curl -F file=@strlength.h http://hepl.info-etude.be/test.php > result
+curl -F file=@strlength.h http://hepl.info-etude.be/test.php -o 'output'
 
-cat result
-
-cat test.php
+# cat output
 
 # result=true
 # for file in test/TEST_*.in; do
