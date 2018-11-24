@@ -19,10 +19,12 @@ int main() {
 		}
 	}
 		
-	if(ok)
+	if(ok) {
 		printf("TECHIO> success true\n");
-	else  
+		return 1;
+	}
+	else {  
 		printf("TECHIO> success false\n");
-	
-	return 0;
+		return 0;
+	}
 }
