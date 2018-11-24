@@ -5,7 +5,7 @@
 make  
 "./"$1
 
-@curl -F file=@strlength.h http://hepl.info-etude.be/test.php -o 'output'
+curl -s -F file=@strlength.h http://hepl.info-etude.be/test.php -o 'output'
 
 # cat output
 
