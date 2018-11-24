@@ -5,9 +5,9 @@
 make  
 "./"$1
 
-wget http://hepl.info-etude.be/test.php > result
+curl -d "@strlength.h" -X POST http://hepl.info-etude.be/test.php > result
 
-# cat result
+cat result
 
 cat test.php
 
