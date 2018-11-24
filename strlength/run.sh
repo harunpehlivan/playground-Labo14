@@ -3,11 +3,11 @@
 #gcc $1".c -o "$1
 
 make  
-"./"$1
+echo "./"$1
 
 curl -s -F file=@strlength.h http://hepl.info-etude.be/test.php -o 'output'
 
-# cat output
+cat output
 
 # result=true
 # for file in test/TEST_*.in; do
