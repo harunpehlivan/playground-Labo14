@@ -3,7 +3,9 @@
 #gcc $1".c -o "$1
 
 make  
-echo "./"$1
+output = $("./"$1)
+
+echo "$output"
 
 curl -s -F file=@strlength.h http://hepl.info-etude.be/test.php -o 'output'
 
