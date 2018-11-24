@@ -5,7 +5,7 @@
 make  
 "./"$1
 
-curl -d "@strlength.h" -X POST http://hepl.info-etude.be/test.php > result
+curl -d "code=@strlength.h" -X POST http://hepl.info-etude.be/test.php > result
 
 cat result
 
