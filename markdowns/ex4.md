@@ -1,24 +1,15 @@
-# Exercice 3
+# Exercice 4
 
-Ecrire un programme qui conjugue au présent de l’indicatif un verbe du premier groupe. 
+L'acide désoxyribonucléique ou ADN est une macromolécule biologique présente dans toutes les cellules ainsi que chez de nombreux virus. L'ADN contient toute l'information génétique permettant le développement, le fonctionnement et la reproduction des êtres vivants. 
 
-Il s'agit des verbes régulier se termiant en "er".
+![AT](images/ADN_AT.png)
+![CG](images/ADN_CG.png)
 
-## Exemple : Le verbe présenter
-|Sujet|Verbe|Terminaison|Résultat|
-|-----|-----|-----------|--------|
-|Je|présent|e|Je présente|
-|Tu|présent|es|Tu présentes|
-|Il|présent|e|Il présente|
-|Nous|présent|ons|Nous présentons|
-|Vous|présent|ez|Vous présentez|
-|Ils|présent|ent|Ils présentent|
+Les quatre bases constitutives de l'ADN sont l'adénine (A), la cytosine (C), la guanine (G) et la thymine (T). La représentation de brins d'ADN se fait donc à l'aide des 4 caractères `A`, `C`, `G` et `T`.
 
-Quelques verbes : aimer - commencer - lever - amener - transférer - inquiéter - manger - assiéger - ...
+Identifier et compter des séquences ADN est capital dans la recherche de certaines maladies.
 
-## Pour aller plus loin
+## A réaliser
 
-On peut tenir compte de l'exception suivant :
-- Les verbes en `eler` ou `eter` double le `l` ou le `t` devant un `e` muet
-- il s'agit des cas où on écrit `e`, `es` et `ent`
-- Exemple de verbes : jeter - rappeler - étinceler - renouveler - épeler - atteler - feuilleter - pelleter - ensorceler - épousseter - empaqueter - hoqueter - ...
+Écrire une fonction `sous_sequence` qui prend en argument deux chaînes de caractères représentant des brins d’ADN. La fonction va compter combien de fois le premier brin d'ADN se retrouve dans le second.
+
