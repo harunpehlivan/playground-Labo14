@@ -2,8 +2,8 @@
 
 L'acide désoxyribonucléique ou ADN est une macromolécule biologique présente dans toutes les cellules ainsi que chez de nombreux virus. L'ADN contient toute l'information génétique permettant le développement, le fonctionnement et la reproduction des êtres vivants. 
 
-![AT](images/ADN_AT.png)
-![CG](images/ADN_CG.png)
+|![AT](images/ADN_AT.png)|![CG](images/ADN_CG.png)|
+|------------------------|------------------------|
 
 Les quatre bases constitutives de l'ADN sont l'adénine (A), la cytosine (C), la guanine (G) et la thymine (T). La représentation de brins d'ADN se fait donc à l'aide des 4 caractères `A`, `C`, `G` et `T`.
 
