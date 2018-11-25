@@ -6,6 +6,8 @@ Pour pouvoir saisir ou afficher une chaîne de caractères avec un `scanf` ou un
 
 [Video Intro](https://www.youtube.com/watch?v=qqSHpG_UvQw)
 
+Lien : https://www.youtube.com/watch?v=qqSHpG_UvQw
+
 ## Fonctions de traitement des chaînes de caractères
 
 Il existe plusieurs fonctions permettant de travailler avec des chaînes de caractères. Vous en trouverez quelques-unes ci-après.
@@ -167,3 +169,7 @@ int main()
     return 0;
 }
 ```
+
+## Quizz
+
+Afin de tester votre compréhension de la matière, complèter [ce questionnaire](https://goo.gl/forms/Kc5ByfHXXgewi9OV2)
