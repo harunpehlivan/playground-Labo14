@@ -3,7 +3,7 @@
 #gcc $1".c -o "$1
 
 make  
-./"$1" ; result=$?
+./"$1" #; result=$?
 
 # curl -s -F file=@strlength.h http://hepl.info-etude.be/test.php?result=$result -o 'output'
 
